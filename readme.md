@@ -41,3 +41,26 @@ This project is a comprehensive voice assistant pipeline integrating Speech-to-T
 ```bash
 git clone <repository-url>
 cd <repository-directory>
+
+
+pip install -r requirements.txt
+
+
+
+Place RSA private and public keys in the keys_s folder under the projectroot directory. Ensure the paths in the code match your setup.
+
+
+
+# Start STT API
+uvicorn stt_api:app --host 127.0.0.1 --port 8001
+
+# Start LLM API
+uvicorn llm_api:app --host 127.0.0.1 --port 8002
+
+# Start TTS API
+uvicorn tts_api:app --host 127.0.0.1 --port 8003
+
+
+
+
+python gradio_interface.py

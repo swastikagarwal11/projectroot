@@ -1,0 +1,11 @@
+Python 3.8+
+Whisper
+Pyttsx3
+FastAPI
+Gradio
+Cryptography
+Langdetect
+Pydantic
+Requests
+NumPy
+SoundFile
